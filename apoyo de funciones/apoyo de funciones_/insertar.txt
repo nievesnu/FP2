@@ -1,0 +1,21 @@
+void insertar(tListaParques & lista, const tParque & parque) {
+    if (lista.contador < MAX_PARQUES) {
+        int i = 0;
+        bool posEncontrada = false;
+        
+        while (!posEncontrada && i < lista.contador) {
+            if (parque < lista.parques[i]) {
+                posEncontrada = true;
+            } else {
+                i++;
+            }
+        }
+        
+        for (int e = lista.contador - 1; e >= i; e--) {
+            lista.parques[e + 1] = lista.parques[e];
+        }
+        
+        lista.parques[i] = parque;
+        lista.contador++;
+    }
+}
