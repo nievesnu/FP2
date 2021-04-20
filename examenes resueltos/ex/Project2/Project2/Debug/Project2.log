@@ -1,0 +1,3 @@
+﻿  pescaderia.cpp
+C:\Users\Tester\Documents\Universidad\1º\FP2\ex\Project2\Project2\pescaderia.cpp(13,46): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
+  Project2.vcxproj -> C:\Users\Tester\Documents\Universidad\1º\FP2\ex\Project2\Debug\Project2.exe
