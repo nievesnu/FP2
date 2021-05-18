@@ -1,0 +1,16 @@
+ELIMINAR UN ELEMENTO DE UN ARRAY
+
+void quitar(tVectorDinamico vectorDinamico, string n) {
+     int i = 0;
+     bool ok = false;
+     while (!ok && i < vectorDinamico.cont) {
+         if (n == vectorDinamico.puntero[i].nombre) {
+             ok = true;
+         }
+         else i++;
+     }
+     for (int j = i; j < vectorDinamico.cont - 1; j++) {
+         vectorDinamico.puntero[j] = vectorDinamico.puntero[j + 1];
+     }
+     vectorDinamico.cont--;
+ }

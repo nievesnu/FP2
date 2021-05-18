@@ -1,0 +1,40 @@
+void ordenarPorInsercion(tLista & lista) {
+    int valor, j;
+    for (int i = 1; i < lista.contador; i++) {
+        valor = lista.valores[i];
+        j = i;
+        while ((j > 0) && (valor < lista.valores[j-1])) {
+            lista.valores[j] = lista.valores[j-1];
+            j--;
+        }
+        lista.valores[j] = valor;
+    }
+}
+
+void ordenarPorSeleccion(tLista & lista) {
+    for (int i = 0; i < lista.contador - 1; i++) {
+        int menor = i;
+        for (int j = i + 1; j < lista.contador; j++) {
+            if (lista.valores[j] < lista.valores[menor]) {
+                menor = j;
+            }
+        }
+        if (i < menor) {
+            int aux = lista.valores[i];
+            lista.valores[i] = lista.valores[menor];
+            lista.valores[menor] = aux;
+        }
+    }
+}
+
+void ordenarPorBurbuja(tLista & lista) {
+    for (int i = 0; i < lista.contador - 1; i++) {
+        for (int j = i + 1; j < lista.contador; j++) {
+            if (lista.valores[j] < lista.valores[i]) {
+                int aux = lista.valores[i];
+                lista.valores[i] = lista.valores[j];
+                lista.valores[j] = aux;
+            }
+        }
+    }
+}

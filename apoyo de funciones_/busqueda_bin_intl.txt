@@ -1,0 +1,37 @@
+// BUSQUEDA BINARIA QUE DEVUELVE ENTERO
+
+int busquedaBinaria(const tListaPersonas & lista, string nombre) {
+    int ini = 0, fin = lista.contador - 1, pos = -1;
+    
+    while (pos == -1 && ini <= fin) {
+        int mitad = (ini + fin) / 2;
+        
+        if (lista.personas[mitad]->nombre < nombre) {
+            ini = mitad + 1;
+        } else if (lista.personas[mitad]->nombre > nombre) {
+            fin = mitad - 1;
+        } else {
+            pos = mitad;
+        }
+    }
+    
+    return pos;
+}
+
+int busquedaBinariaRecursiva(const tListaPersonas & lista, string nombre, int ini, int fin) {
+    int pos = -1;
+    
+    if (ini <= fin) {
+        int mitad = (ini + fin) / 2;
+        
+        if (lista.personas[mitad]->nombre < nombre) {
+            pos = busquedaBinariaRecursiva(lista, nombre, mitad + 1, fin);
+        } else if (lista.personas[mitad]->nombre > nombre) {
+            pos = busquedaBinariaRecursiva(lista, nombre, ini, mitad - 1);
+        } else {
+            pos = mitad;
+        }
+    }
+    
+    return pos;
+}
