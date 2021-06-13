@@ -1,0 +1,61 @@
+5 3
+Teide
+Canarias
+3718
+1650
+Garajonay
+Canarias
+1487
+700
+Caldera de Taburiente
+Canarias
+2426
+430
+Timanfaya
+Canarias
+510
+0
+Picos de Europa
+Asturias
+2650
+70
+Monfrague
+Extremadura
+750
+250
+Tablas de Daimiel
+Castilla la Mancha
+618
+607
+Cabanneros
+Castilla la Mancha
+1448
+600
+Sierra Nevada
+Andalucia
+3482
+1200
+Donnana
+Andalucia
+47
+0
+Ordesa y Monte Perdido
+Aragon
+3335
+750
+Archipielago de Cabrera
+Islas Baleares
+172
+-118
+Aiguas Tortas y Lago de San Mauricio
+Catalunna
+3033
+1350
+Sierra de Guadarrama
+Madrid
+2428
+900
+Islas Atlanticas de Galicia
+Galicia
+128
+0

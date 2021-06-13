@@ -1,0 +1,3 @@
+﻿  coches.cpp
+C:\Users\nieve\OneDrive\Documentos\GitHub\FP2\examenes resueltos\ex\Project5_examen_8_6_1_AyB\Project5_examen_8_6_1_AyB\coches.cpp(32,7): error C2440: '=': no se puede realizar la conversión de 'int' a 'tAveria'
+C:\Users\nieve\OneDrive\Documentos\GitHub\FP2\examenes resueltos\ex\Project5_examen_8_6_1_AyB\Project5_examen_8_6_1_AyB\coches.cpp(32,6): message : La conversión a tipo de enumeración requiere una conversión explícita (static_cast, conversión de estilo de C o conversión de estilo de función)
